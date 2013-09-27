@@ -62,7 +62,7 @@
 
 <h2>Conteúdos</h2>
 <ul>
-  <li>ContentSection</li>
+  <li><h3>ContentSection</h3></li>
   Seção de conteúdos na biblioteca QMágico. Uma seção suporta somente outras seções ou conteúdos.
   <br>
   <pre><code>
@@ -73,48 +73,54 @@
      'contents': 15}
   </code></pre>
 
-  <li>Video</li>
+  <li><h3>Video</h3></li>
+  Vídeos da plataforma, hospedados no Vimeo e no Youtube. Seus atributos 'type' podem ser VIMEO e VIDEO, respectivamente.
   <pre> 
-  <code>{'title': 'content',
-         'type': 'VIDEO'}</code>
+  <code>
+    {'id': 10,
+    'type': 'VIDEO',
+    'title': 'Matemática - Soma e Subtração',
+    'likes': 20,
+    'points': 200,
+    'section_id': 3 [or null],
+    'seconds': 80}
+  </code>
   </pre>
-</ul>
 
+  <li><h3>TextClass</h3></li>
+  Aulas escritas pelos professores.
+  <pre> 
+  <code>
+    {'id': 10,
+    'type': 'TEXT_CLASS',
+    'title': 'Grandes civilizações - Grécia',
+    'likes': 8,
+    'points': 300,
+    'section_id': 3 [or null]}</code>
+  </pre>
+
+  <li><h3>ExerciseList</h3></li>
+  Listas de exercícios.
+  <pre> 
+  <code>
+    {'id': 10,
+    'type': 'EXERCISE_LIST',
+    'title': 'Prática 1 - Por que, Por quê, Porque ou Porquê?',
+    'likes': 12,
+    'points': 1000,
+    'section_id': 3 [or null],
+    'content_size': 10}</code>
+  </pre>
+<br>
+
+<h2>Métricas</h2>
 <br>
 
 <h2>Escola</h2>
-<ul>
-  <li>Organization<br>
-    Representa a organização de ensino do namespace solicitado.
-  </li> 
-  
-  <li>School</li>
-  Escolas cadastradas por alunos ou administradores.
-
-  <li>SchoolClass</li>
-  Turmas cadastradas por professores ou administradores.
-</ul>
-
 <br>
 
 <h2>Usuários</h2>
-<ul>
-  <li>User<br>
-    Usuário da plataforma.
-  </li> 
-  
-  <li>Student</li>
-  Estudante da plataforma.
-</ul>
-
-
-<h2>Métricas</h2>
-<ul>
-  <li>ContentInteractio<br>
-    Dados de interação de usuários e conteúdos.
-  </li> 
-</ul>
-
+<br>
 </section>
 
 <footer>
