@@ -53,8 +53,8 @@
   <ul>
     <li><a href="/modelos">Modelos</a></li>
     <li><a href="/metodos">Métodos</a></li>
-    <li><a href="http://twitter.com/splusk">Suporte</a></li>
-    <li><a href="http://facebook.com/sreejithemk">Contato</a></li>
+    <li><a href="#">Suporte</a></li>
+    <li><a href="#">Contato</a></li>
   </ul>
 </header>
 
@@ -62,11 +62,22 @@
 
 <h2>Conteúdos</h2>
 <ul>
-  <li>Content</li> 
-  É um objeto que representa conteúdos da plataforma.  
-  
   <li>ContentSection</li>
-  Agrupa conteúdos e sub-seções na biblioteca.
+  Seção de conteúdos na biblioteca QMágico. Uma seção suporta somente outras seções ou conteúdos.
+  <br>
+  <pre><code>
+    {'name': 'section',
+     'id': 3,
+     'parent_id': 1 [or null],
+     'subsections': 0,
+     'contents': 15}
+  </code></pre>
+
+  <li>Content</li>
+  <pre> 
+  <code>{'title': 'content',
+         'type': 'VIDEO'}</code>
+  </pre>
 </ul>
 
 <br>
