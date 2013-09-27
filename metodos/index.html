@@ -62,30 +62,30 @@
   <h2>Organização de ensino</h2>
     <div class="methods">
       <h3>/api/organization/get_organization_data</h3>
-      <p>retorna um JSON do tipo Organization</p>
+      <p>retorna um objeto do tipo Organization</p>
     </div>
     <div class="methods">
       <h3>/api/organization/get_schools</h3>
-      <p>retorna uma lista de objetos JSON do tipo School</p>
+      <p>retorna uma lista de objetos do tipo School</p>
     </div>
     <div class="methods">
     <h3>/api/organization/get_school_classes</h3> 
-      <p>retorna uma lista de objetos JSON do tipo SchoolClass</p>
+      <p>retorna uma lista de objetos do tipo SchoolClass</p>
     </div>
 
   <br>
   <h2>Turmas</h2>
     <div class="methods">
-      <h3>/api/school_class/get_school_class_data/school_class_id</h3>
-      <p>retorna um JSON do tipo SchoolClass</p>
+      <h3>/api/school_class/get_school_class_data/{school_class_id}</h3>
+      <p>retorna um do tipo SchoolClass</p>
     </div>
     <div class="methods">
-      <h3>/api/organization/get_schools</h3>
-      <p>retorna uma lista de objetos JSON do tipo School</p>
+      <h3>/api/school_class/get_school_class_students/{school_class_id}</h3>
+      <p>retorna uma lista de objetos do tipo Student</p>
     </div>
     <div class="methods">
-    <h3>/api/organization/get_school_classes</h3> 
-      <p>retorna uma lista de objetos JSON do tipo SchoolClass</p>
+    <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
+      <p>retorna uma lista de objetos do tipo Content</p>
     </div>
 </section>
 
