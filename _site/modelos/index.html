@@ -46,9 +46,9 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    
   <header>
-  <h1><a href="/">QMágico dev.</a></h1>
+  <h1><a href="/">QMágico API</a></h1>
   <p>QMágico do seu jeito!</p>
   <ul>
     <li><a href="/modelos">Modelos</a></li>
@@ -58,7 +58,7 @@
   </ul>
 </header>
 
-<section>
+<section class='content'>
 
 <h2>Conteúdos</h2>
 <ul>
@@ -111,9 +111,22 @@
     'section_id': 3 [or null],
     'content_size': 10}</code>
   </pre>
+</ul>
 <br>
 
 <h2>Métricas</h2>
+<ul>
+  <li><h3>ContentSection</h3></li>
+  Seção de conteúdos na biblioteca QMágico. Uma seção suporta somente outras seções ou conteúdos.
+  <br>
+  <pre><code>
+    {'name': 'section',
+     'id': 3,
+     'parent_id': 1 [or null],
+     'subsections': 0,
+     'contents': 15}
+  </code></pre>
+</ul>
 <br>
 
 <h2>Escola</h2>

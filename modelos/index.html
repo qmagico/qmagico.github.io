@@ -2,7 +2,7 @@
 
 <html lang="en-US">
   <head>
-    <title>QMágico dev.</title>
+    <title>QMágico API</title>
     <meta charset="UTF-8" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="Sreejith K" />
@@ -46,9 +46,9 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    
   <header>
-  <h1><a href="/">QMágico dev.</a></h1>
+  <h1><a href="/">QMágico API</a></h1>
   <p>QMágico do seu jeito!</p>
   <ul>
     <li><a href="/modelos">Modelos</a></li>
@@ -58,7 +58,7 @@
   </ul>
 </header>
 
-<section>
+<section class='content'>
 
 <h2>Conteúdos</h2>
 <ul>
@@ -111,9 +111,27 @@
     'section_id': 3 [or null],
     'content_size': 10}</code>
   </pre>
+</ul>
 <br>
 
 <h2>Métricas</h2>
+<ul>
+  <li><h3>InteractionSummary</h3></li>
+  Resumo das interações entre alunos e conteúdos na plataforma.
+  <br>
+  <pre><code>
+    {"status": "CORRECT",
+     "like": "DISLIKE",
+     "solved": 3,
+     "spent": 15,
+     "accesses": 4,
+     "efficiency": 0.6666666666666666,
+     "mistakes": 1, 
+     "correct_answers": 2, 
+     "tips": 0,
+     "points": 200}
+  </code></pre>
+</ul>
 <br>
 
 <h2>Escola</h2>

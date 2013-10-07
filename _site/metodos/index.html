@@ -9,8 +9,8 @@
 
 <link rel="alternate" href="http://feeds2.feedburner.com/foobarnbaz"
   title="Codeception" type="application/atom+xml" />
-<link rel="stylesheet" href="/stylesheets/styles.css">
 <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+<link rel="stylesheet" href="/stylesheets/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,9 +46,9 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    
   <header>
-  <h1><a href="/">QMágico dev.</a></h1>
+  <h1><a href="/">QMágico API</a></h1>
   <p>QMágico do seu jeito!</p>
   <ul>
     <li><a href="/modelos">Modelos</a></li>
@@ -58,34 +58,93 @@
   </ul>
 </header>
 
-<section>
+<section class='content'>
+  <h2>Autenticação</h2>
+    <div class="methods">
+      <h3>/api/auth/{token}/{namespace}</h3>
+      <p>retorna um objeto do tipo User</p>
+    </div>
+
+  <br>
+  <h2>Usuários</h2>
+    <div class="methods">
+      <h3>/api/user/get_user_data</h3>
+      <p>retorna um objeto do tipo User</p>
+    </div>
+    <div class="methods">
+      <h3>/api/user/get_student_classes</h3>
+      <p>retorna uma lista de objetos do tipo SchoolClass</p>
+    </div>
+    <div class="methods">
+    <h3>/api/user/get_teacher_classes</h3> 
+      <p>retorna uma lista de objetos do tipo SchoolClass</p>
+    </div>
+
+  <br>
   <h2>Organização de ensino</h2>
     <div class="methods">
       <h3>/api/organization/get_organization_data</h3>
-      <p>retorna um JSON do tipo Organization</p>
+      <p>retorna um objeto do tipo Organization</p>
     </div>
     <div class="methods">
       <h3>/api/organization/get_schools</h3>
-      <p>retorna uma lista de objetos JSON do tipo School</p>
+      <p>retorna uma lista de objetos do tipo School</p>
     </div>
     <div class="methods">
     <h3>/api/organization/get_school_classes</h3> 
-      <p>retorna uma lista de objetos JSON do tipo SchoolClass</p>
+      <p>retorna uma lista de objetos do tipo SchoolClass</p>
     </div>
 
   <br>
   <h2>Turmas</h2>
     <div class="methods">
-      <h3>/api/school_class/get_school_class_data/school_class_id</h3>
-      <p>retorna um JSON do tipo SchoolClass</p>
+      <h3>/api/school_class/get_school_class_data/{school_class_id}</h3>
+      <p>retorna um do objeto tipo SchoolClass</p>
     </div>
     <div class="methods">
-      <h3>/api/organization/get_schools</h3>
-      <p>retorna uma lista de objetos JSON do tipo School</p>
+      <h3>/api/school_class/get_school_class_students/{school_class_id}</h3>
+      <p>retorna uma lista de objetos do tipo Student</p>
     </div>
     <div class="methods">
-    <h3>/api/organization/get_school_classes</h3> 
-      <p>retorna uma lista de objetos JSON do tipo SchoolClass</p>
+    <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
+      <p>retorna uma lista de objetos do tipo Content</p>
+    </div>
+
+    <br>
+    <h2>Seções</h2>
+    <div class="methods">
+      <h3>/api/sections/get_sections/{parent_id}</h3>
+      <p>retorna uma lista de objetos do tipo ContentSection</p>
+    </div>
+    <div class="methods">
+      <h3>/api/sections/get_section_contents/{section_id}</h3>
+      <p>retorna uma lista de objetos do tipo Content</p>
+    </div>
+    <div class="methods">
+    <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
+      <p>retorna uma lista de objetos do tipo Content</p>
+    </div>
+
+    <br>
+    <h2>Conteúdos</h2>
+    <div class="methods">
+      <h3>/api/content/get_contents/{content_type}</h3>
+      <p>retorna uma lista de objetos do tipo Content</p>
+    </div>
+    <div class="methods">
+      <h3>/api/content/get_content_tags/{content_id}</h3>
+      <p>retorna uma lista de objetos do tipo Tag</p>
+    </div>
+    <div class="methods">
+    <h3>/api/content/get_school_class_contents/{school_class_id}</h3> 
+      <p>retorna uma lista de objetos do tipo Content</p>
+    </div>
+
+    <br>
+    <h2>Métricas</h2>
+    <div class="methods">
+      <h3>/api/metrics/get_content_metrics_from_user/{user_id}/{content_id}</h3>
+      <p>retorna um objeto do tipo InteractionSummary</p>
     </div>
 </section>
 

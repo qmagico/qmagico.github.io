@@ -107,6 +107,7 @@ img {
 header {
   width:270px;
   float:left;
+  margin-left: 100px;
   position:fixed;
 }
 
@@ -153,6 +154,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+  margin-left: 45px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -250,4 +252,8 @@ ul.posts span {
 
 .methods {
   margin-left: 20px;
+}
+
+.content {
+  margin-right: 243px;
 }
