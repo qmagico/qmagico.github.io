@@ -257,3 +257,8 @@ ul.posts span {
 .content {
   margin-right: 243px;
 }
+
+ul ul {
+    left: -25px;
+    position: relative;
+}

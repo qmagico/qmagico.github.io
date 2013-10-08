@@ -52,21 +52,33 @@
   <p>QMágico do seu jeito!</p>
   <ul>
     <li><a href="/objetos">Objetos</a></li>
-    <li><a href="/metodos">Métodos</a></li>
-    <li><a href="#">Suporte</a></li>
+    <li><a href="/metodos">Métodos</a>
+      <ul>
+        <li><a href="#auth">Autenticação</a></li>
+        <li><a href="#usuarios">Usuários</a></li>
+        <li><a href="#organizacao">Organização de ensino</a></li>
+        <li><a href="#turmas">Turmas</a></li>
+        <li><a href="#secoes">Seções</a></li>
+        <li><a href="#conteudos">Conteúdos</a></li>
+        <li><a href="#metricas">Métricas</a></li>
+      </ul>
+    </li>
+    <li><a href="https://groups.google.com/forum/#!forum/qmagico_dev_suporte" target="_blank">Suporte</a></li>
     <li><a href="#">Contato</a></li>
   </ul>
 </header>
 
 <section class='content'>
-  <h2>Autenticação</h2>
+  <section id="auth">
+    <h2>Autenticação</h2>
     <div class="methods">
       <h3>/api/auth/{token}/{namespace}</h3>
       <p>retorna um objeto do tipo User</p>
     </div>
+  </section>
 
-  <br>
-  <h2>Usuários</h2>
+  <section id="usuarios">
+    <h2>Usuários</h2>
     <div class="methods">
       <h3>/api/user/get_user_data</h3>
       <p>retorna um objeto do tipo User</p>
@@ -79,9 +91,10 @@
     <h3>/api/user/get_teacher_classes</h3> 
       <p>retorna uma lista de objetos do tipo SchoolClass</p>
     </div>
+  </section> 
 
-  <br>
-  <h2>Organização de ensino</h2>
+  <section id="organizacao">
+    <h2>Organização de ensino</h2>
     <div class="methods">
       <h3>/api/organization/get_organization_data</h3>
       <p>retorna um objeto do tipo Organization</p>
@@ -94,9 +107,10 @@
     <h3>/api/organization/get_school_classes</h3> 
       <p>retorna uma lista de objetos do tipo SchoolClass</p>
     </div>
+  </section>
 
-  <br>
-  <h2>Turmas</h2>
+  <section id="turmas">
+    <h2>Turmas</h2>
     <div class="methods">
       <h3>/api/school_class/get_school_class_data/{school_class_id}</h3>
       <p>retorna um do objeto tipo SchoolClass</p>
@@ -109,8 +123,9 @@
     <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
       <p>retorna uma lista de objetos do tipo Content</p>
     </div>
+  </section>
 
-    <br>
+  <section id="secoes">
     <h2>Seções</h2>
     <div class="methods">
       <h3>/api/sections/get_sections/{parent_id}</h3>
@@ -124,8 +139,9 @@
     <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
       <p>retorna uma lista de objetos do tipo Content</p>
     </div>
+  </section>
 
-    <br>
+  <section id="conteudos">
     <h2>Conteúdos</h2>
     <div class="methods">
       <h3>/api/content/get_contents/{content_type}</h3>
@@ -139,13 +155,15 @@
     <h3>/api/content/get_school_class_contents/{school_class_id}</h3> 
       <p>retorna uma lista de objetos do tipo Content</p>
     </div>
+  </section>
 
-    <br>
+  <section id="metricas">
     <h2>Métricas</h2>
     <div class="methods">
       <h3>/api/metrics/get_content_metrics_from_user/{user_id}/{content_id}</h3>
       <p>retorna um objeto do tipo InteractionSummary</p>
     </div>
+  </section> 
 </section>
 
 <footer>
