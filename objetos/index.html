@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>QMágico API</title>
+    <meta charset="UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Sreejith K" />
+
+<link rel="alternate" href="http://feeds2.feedburner.com/foobarnbaz"
+  title="Codeception" type="application/atom+xml" />
+<link rel="stylesheet" href="/stylesheets/styles.css">
+<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href='/images/layout/favicon.gif' rel='shortcut icon' type='image/ico' />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25990753-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  // Create elements here allows IE8 to style them when it sees the real thing.
+  document.createElement('article');
+  document.createElement('aside');
+  document.createElement('footer');
+  document.createElement('header');
+  document.createElement('hgroup');
+  document.createElement('menu');
+  document.createElement('nav');
+  document.createElement('section');
+</script>
+<![endif]-->
+  </head>
+
+  <body>
+    
+  <header>
+  <h1><a href="/">QMágico API</a></h1>
+  <p>QMágico do seu jeito!</p>
+  <ul>
+    <li><a href="/objetos">Objetos</a>
+      <ul>
+        <li><a href="#conteudos">Conteúdo</a></li>
+        <li><a href="#metricas">Métricas</a></li>
+        <li><a href="#escola">Escola</a></li>
+        <li><a href="#usuarios">Usuário</a></li>
+      </ul>
+    </li>
+    <li><a href="/metodos">Métodos</a></li>
+    <li><a href="#">Suporte</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</header>
+
+<section class='content'>
+  <section id="conteudos">
+    <br>
+    <h2>Conteúdos</h2>
+      <ul>
+      <li><h3>ContentSection</h3></li>
+      Seção de conteúdos na biblioteca QMágico. Uma seção suporta somente outras seções ou conteúdos.
+      <br>
+      <pre><code>
+        {'name': 'section',
+         'id': 3,
+         'parent_id': 1 [or null],
+         'subsections': 0,
+         'contents': 15}
+      </code></pre>
+
+      <li><h3>Video</h3></li>
+      Vídeos da plataforma, hospedados no Vimeo e no Youtube. Seus atributos 'type' podem ser VIMEO e VIDEO, respectivamente.
+      <pre> 
+      <code>
+        {'id': 10,
+        'type': 'VIDEO',
+        'title': 'Matemática - Soma e Subtração',
+        'likes': 20,
+        'points': 200,
+        'section_id': 3 [or null],
+        'seconds': 80}
+      </code>
+      </pre>
+
+      <li><h3>TextClass</h3></li>
+      Aulas escritas pelos professores.
+      <pre> 
+      <code>
+        {'id': 10,
+        'type': 'TEXT_CLASS',
+        'title': 'Grandes civilizações - Grécia',
+        'likes': 8,
+        'points': 300,
+        'section_id': 3 [or null]}</code>
+      </pre>
+
+      <li><h3>ExerciseList</h3></li>
+      Listas de exercícios.
+      <pre> 
+      <code>
+        {'id': 10,
+        'type': 'EXERCISE_LIST',
+        'title': 'Prática 1 - Por que, Por quê, Porque ou Porquê?',
+        'likes': 12,
+        'points': 1000,
+        'section_id': 3 [or null],
+        'content_size': 10}</code>
+      </pre>
+    </ul>
+  </section>
+  
+  <section id="metricas">
+    <br>
+    <h2>Métricas</h2>
+    <ul>
+      <li><h3>InteractionSummary</h3></li>
+      Resumo das interações entre alunos e conteúdos na plataforma.
+      <br>
+      <pre><code>
+        {"status": "CORRECT",
+         "like": "DISLIKE",
+         "solved": 3,
+         "spent": 15,
+         "accesses": 4,
+         "efficiency": 0.725,
+         "mistakes": 1, 
+         "correct_answers": 2, 
+         "tips": 0,
+         "points": 200}
+      </code></pre>
+    </ul>
+  </section>
+
+  <section id="escola">
+    <br>
+    <h2>Escola</h2>
+    <ul>
+      <li><h3>Organization</h3></li>
+      Organização de ensino.
+      <br>
+      <pre><code>
+        {"name": "Sistema brasileiro de ensino - SBE",
+         "licenses": 1000,
+         "used_licenses": 680,
+         "visitors_count": 680,
+         "students_count": 550,
+         "teachers_count": 100,
+         "admins_count": 30}
+      </code></pre>
+      <li><h3>School</h3></li>
+      Escola, descrever melhor.
+      <br>
+      <pre><code>
+        {"name": "Escola Brasil",
+         "students_count": 10,
+         "teachers_count": 3}
+      </code></pre>
+      <li><h3>SchoolClass</h3></li>
+      Turma.
+      <br>
+      <pre><code>
+        {"name": "Turma Química - Módulo 1",
+         "teacher_id": "flavio_andrade",
+         "teacher_name": "Flávio Andrade",
+         "status": "ACTIVE"}
+      </code></pre>
+    </ul>
+  </section>
+  
+  <section id="usuarios">
+    <br>
+    <h2>Usuários</h2>
+    <br>
+    <ul>
+      <li><h3>User</h3></li>
+      Usuários.
+      <br>
+      <pre><code>
+        {"user_id": "giovane",
+         "name": "Giovane Liberato",
+         "roles": ['VISITOR', 'STUDENT', 'TEACHER', 'ADMIN']}
+      </code></pre>
+      <li><h3>Student</h3></li>
+      Estudante.
+      <br>
+      <pre><code>
+        {"id": "giovane",
+         "name": "Giovane Liberato",
+         "points": 1200}
+      </code></pre>
+      
+    </ul>
+  </section>
+</section>
+
+<footer>
+  <!-- <p class="c">&copy; 2011 <a href="mailto:sreejithemk@gmail.com">Sreejith Kesavan</a></p> -->
+  <p><small>Powered by <a href="https://github.com/semk/voldemort">Voldemort</a> &mdash; <a href="https://github.com/orderedlist/minimal">Minimal</a> theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+    </div>
+    <script src="/javascripts/scale.fix.js"></script>
+  </body>
+</html>
