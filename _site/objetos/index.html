@@ -73,16 +73,88 @@
       <li><h3>ContentSection</h3></li>
       Seção de conteúdos na biblioteca QMágico. Uma seção suporta somente outras seções ou conteúdos.
       <br>
+      <br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>Nome da seção de conteúdos.</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Identificador único da seção.</td>
+          </tr>
+          <tr>
+            <td>parent_id</td>
+            <td>Identificador da seção pai. Caso o valor seja nulo, a seção solicitada é uma seção raiz</td>
+          </tr>
+          <tr>
+            <td>subsections</td>
+            <td>Número de subseções.</td>
+          </tr>
+          <tr>
+            <td>contents</td>
+            <td>Número de conteúdos.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      Exemplo:
       <pre><code>
         {'name': 'section',
          'id': 3,
-         'parent_id': 1 [or null],
+         'parent_id': 1,
          'subsections': 0,
          'contents': 15}
       </code></pre>
 
       <li><h3>Video</h3></li>
-      Vídeos da plataforma, hospedados no Vimeo e no Youtube. Seus atributos 'type' podem ser VIMEO e VIDEO, respectivamente.
+      Vídeos da plataforma, hospedados no Vimeo e no Youtube.
+      <br><br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Idenfiticador único de conteúdos.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>Categoria do vídeo. Existem dois tipo: <strong>VIDEO</strong> (para vídeos do Youtube) e <strong>VIMEO</strong> (para vídeos do Vimeo).</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Título do vídeo na plataforma QMágico (independente do título no Youtube ou no Vimeo).</td>
+          </tr>
+          <tr>
+            <td>likes</td>
+            <td>Número de opções "curtir" que o vídeo recebeu.</td>
+          </tr>
+          <tr>
+            <td>points</td>
+            <td>Número de pontos que se ganha ao completar este vídeo.</td>
+          </tr>
+          <tr>
+            <td>section_id</td>
+            <td>Identificador da seção que armazena este conteúdo.</td>
+          </tr>
+          <tr>
+            <td>seconds</td>
+            <td>Tempo de duração do vídeo.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      Exemplo:
       <pre> 
       <code>
         {'id': 10,
@@ -90,13 +162,50 @@
         'title': 'Matemática - Soma e Subtração',
         'likes': 20,
         'points': 200,
-        'section_id': 3 [or null],
+        'section_id': 3,
         'seconds': 80}
       </code>
       </pre>
 
       <li><h3>TextClass</h3></li>
       Aulas escritas pelos professores.
+      <br><br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Idenfiticador único de conteúdos.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>Categoria do vídeo.</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Título do vídeo na plataforma QMágico (independente do título no Youtube ou no Vimeo).</td>
+          </tr>
+          <tr>
+            <td>likes</td>
+            <td>Número de opções "curtir" que o vídeo recebeu.</td>
+          </tr>
+          <tr>
+            <td>points</td>
+            <td>Número de pontos que se ganha ao completar este vídeo.</td>
+          </tr>
+          <tr>
+            <td>section_id</td>
+            <td>Identificador da seção que armazena este conteúdo.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      Exemplo:
+      
       <pre> 
       <code>
         {'id': 10,
@@ -104,7 +213,8 @@
         'title': 'Grandes civilizações - Grécia',
         'likes': 8,
         'points': 300,
-        'section_id': 3 [or null]}</code>
+        'section_id': 3
+      </code>
       </pre>
 
       <li><h3>ExerciseList</h3></li>
@@ -187,6 +297,17 @@
     <ul>
       <li><h3>User</h3></li>
       Usuários.
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Tipo</th>
+            <th>Descrição</th>
+          </tr>
+        </tbody>
+      </table>
+
+
       <br>
       <pre><code>
         {"user_id": "giovane",

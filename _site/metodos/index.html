@@ -128,7 +128,7 @@
   <section id="secoes">
     <h2>Seções</h2>
     <div class="methods">
-      <h3>/api/sections/get_sections/{parent_id}</h3>
+      <h3>/api/sections/get_sections/{parent_id | default=None}</h3>
       <p>retorna uma lista de objetos do tipo ContentSection</p>
     </div>
     <div class="methods">
@@ -144,7 +144,7 @@
   <section id="conteudos">
     <h2>Conteúdos</h2>
     <div class="methods">
-      <h3>/api/content/get_contents/{content_type}</h3>
+      <h3>/api/content/get_contents/{content_type | default=''}</h3>
       <p>retorna uma lista de objetos do tipo Content</p>
     </div>
     <div class="methods">
