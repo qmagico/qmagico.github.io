@@ -502,32 +502,65 @@
     <ul>
       <li><h3>User</h3></li>
       Usuários.
+      <br><br>
       <table>
         <tbody>
           <tr>
             <th>Campo</th>
-            <th>Tipo</th>
             <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Idenfiticador único do usuário na plataforma.</td>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>Nome do usuário.</td>
+          </tr>
+          <tr>
+            <td>roles</td>
+            <td>Lista de permissões do usuário na plataforma. As opções são: 'VISITOR' para visitante, 'STUDENT' para estudante, 'TEACHER' para professor e 'ADMIN' para administrador.</td>
+          </tr>
+          <tr>
+            <td>gender</td>
+            <td>Sexo do usuário, representado por M ou F.</td>
+          </tr>
+          <tr>
+            <td>state</td>
+            <td>Estado informado pelo usuário.</td>
+          </tr>
+          <tr>
+            <td>town</td>
+            <td>Cidade informada pelo usuário.</td>
+          </tr>
+          <tr>
+            <td>school_name</td>
+            <td>Nome da escola do usuário.</td>
+          </tr>
+          <tr>
+            <td>points</td>
+            <td>Pontos ganhos pelo usuário.</td>
+          </tr>
+          <tr>
+            <td>birth</td>
+            <td>Data de nascimento do usuário no formato dd/mm/aaaa.</td>
           </tr>
         </tbody>
       </table>
 
-
       <br>
+      Exemplo:
       <pre><code>
-        {"user_id": "giovane",
+        {"id": giovane.liberato
          "name": "Giovane Liberato",
-         "roles": ['VISITOR', 'STUDENT', 'TEACHER', 'ADMIN']}
+         "roles": ["ADMIN", "VISITOR", "TEACHER", "STUDENT"],
+         "gender": "M",
+         "town": "São Paulo",
+         "state": "SP",
+         "school_name": "FATEC",
+         "points": 1800,
+         "birth": "10/03/1985"}
       </code></pre>
-      <li><h3>Student</h3></li>
-      Estudante.
-      <br>
-      <pre><code>
-        {"id": "giovane",
-         "name": "Giovane Liberato",
-         "points": 1200}
-      </code></pre>
-      
     </ul>
   </section>
 </section>
