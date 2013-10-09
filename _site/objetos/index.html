@@ -218,7 +218,8 @@
       </pre>
 
       <li><h3>ExerciseList</h3></li>
-      Listas de exercícios.<br><br>
+      Listas de exercícios.
+      <br><br>
       <table>
         <tbody>
           <tr>
@@ -273,18 +274,100 @@
     <ul>
       <li><h3>InteractionSummary</h3></li>
       Resumo das interações entre alunos e conteúdos na plataforma.
+      <br><br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>status</td>
+            <td>Define se o aluno concluiu ou não o conteudo. É populado com CORRECT quando o conteúdo foi finalizado e INCORRECT quando ainda não foi finalizado.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>Tipo do conteúdo.</td>
+          </tr>
+          <tr>
+            <td>like</td>
+            <td>Define se o aluno "curtiu" o conteúdo. É populado com as opções LIKE ou DISLIKE.</td>
+          </tr>
+          <tr>
+            <td>spent</td>
+            <td>Tempo (em segundos) que o aluno visualizou o conteúdo.</td>
+          </tr>
+          <tr>
+            <td>acesses</td>
+            <td>Número de acessos que o aluno fez ao conteúdo.</td>
+          </tr> 
+          <tr>
+            <td>points</td>
+            <td>Número de pontos que o aluno conseguiu no conteúdo.</td>
+          </tr>
+        </tbody>
+      </table>
       <br>
+      <h3>Alguns tipos de conteúdos tem campos adicionais nos seus InteractionSummary.</h3>
+      <br>
+      <strong>Listas de exercícios</strong>
+      <br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>efficiency</td>
+            <td>Número real entre 0 e 1 que armazena a proficiência do aluno na lista de Exercícios.</td>
+          </tr>
+          <tr>
+            <td>correct_answers</td>
+            <td>Contador de exercícios respondidos corretamente.</td>
+          </tr>
+          <tr>
+            <td>mistakes</td>
+            <td>Contador de exercícios respondidos incorretamente.</td>
+          </tr>
+          <tr>
+            <td>solved</td>
+            <td>Contador de exercícios respondidos. É a soma dos campos correct_answers e mistakes.</td>
+          </tr>
+          <tr>
+            <td>tips</td>
+            <td>Contador de dicas pedidas pelo aluno na lista de exercícios.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <strong>Video</strong>
+      <br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>stop</td>
+            <td>Tempo de parada(em segundos)do aluno no vídeo.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      Exemplo:
       <pre><code>
         {"status": "CORRECT",
          "like": "DISLIKE",
-         "solved": 3,
          "spent": 15,
          "accesses": 4,
          "efficiency": 0.725,
+         "points": 200,
          "mistakes": 1, 
          "correct_answers": 2, 
          "tips": 0,
-         "points": 200}
+         "solved": 3}
       </code></pre>
     </ul>
   </section>
@@ -295,15 +378,54 @@
     <ul>
       <li><h3>Organization</h3></li>
       Organização de ensino.
+      <br><br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Campo</th>
+            <th>Descrição</th>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>Nome da organização de ensino.</td>
+          </tr>
+          <tr>
+            <td>licenses</td>
+            <td>Número de licenças totais da organização de ensino.</td>
+          </tr>
+          <tr>
+            <td>used_licenses</td>
+            <td>Número de licenças usadas pela organização de ensino.</td>
+          </tr>
+          <tr>
+            <td>visitors_count</td>
+            <td>Número de usuários visitantes na plataforma.</td>
+          </tr>
+          <tr>
+            <td>students_count</td>
+            <td>Número de estudantes na plataforma.</td>
+          </tr>
+          <tr>
+            <td>teachers_count</td>
+            <td>Número de professores na plataforma.</td>
+          </tr>
+          <tr>
+            <td>teachers_count</td>
+            <td>Número de administradores na plataforma.</td>
+          </tr>
+        </tbody>
+      </table>
+
       <br>
+      Exemplo:
       <pre><code>
         {"name": "Sistema brasileiro de ensino - SBE",
          "licenses": 1000,
          "used_licenses": 680,
          "visitors_count": 680,
-         "students_count": 550,
+         "students_count": 570,
          "teachers_count": 100,
-         "admins_count": 30}
+         "admins_count": 10}
       </code></pre>
       <li><h3>School</h3></li>
       Escola, descrever melhor.
