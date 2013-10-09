@@ -53,6 +53,7 @@
   <ul>
     <li><a href="/objetos">Objetos</a>
       <ul>
+        <li><a href="#secoes">Seções</a></li>
         <li><a href="#conteudos">Conteúdo</a></li>
         <li><a href="#metricas">Métricas</a></li>
         <li><a href="#escola">Escola</a></li>
@@ -66,11 +67,10 @@
 </header>
 
 <section class='content'>
-  <section id="conteudos">
-    <br>
-    <h2>Conteúdos</h2>
-      <ul>
-      <li><h3>ContentSection</h3></li>
+  <section id='secoes'>
+  <h2>Seções</h2>
+  <ul>
+  <article id='content_section'><li><h3>ContentSection</h3></li>
       Seção de conteúdos na biblioteca QMágico. Uma seção suporta somente outras seções ou conteúdos.
       <br>
       <br>
@@ -112,8 +112,16 @@
          'subsections': 0,
          'contents': 15}
       </code></pre>
+      </ul>
+      </article>
+  </section>
 
-      <li><h3>Video</h3></li>
+
+  <section id="conteudos">
+    <br>
+    <h2>Conteúdos</h2>
+      <ul>
+      <article id="video"><li><h3>Video</h3></li>
       Vídeos da plataforma, hospedados no Vimeo e no Youtube.
       <br><br>
       <table>
@@ -166,6 +174,7 @@
         'seconds': 80}
       </code>
       </pre>
+      </article>
 
       <li><h3>TextClass</h3></li>
       Aulas escritas pelos professores.
@@ -218,7 +227,7 @@
       </pre>
 
       <li><h3>ExerciseList</h3></li>
-      Listas de exercícios.
+      Listas de exercícios para praticar.
       <br><br>
       <table>
         <tbody>
@@ -376,8 +385,9 @@
     <br>
     <h2>Escola</h2>
     <ul>
+      <article id="organization">
       <li><h3>Organization</h3></li>
-      Organização de ensino.
+      Organização de ensino, é a entidade máxima da plafatorma e é única por namespace.
       <br><br>
       <table>
         <tbody>
@@ -427,9 +437,10 @@
          "teachers_count": 100,
          "admins_count": 10}
       </code></pre>
+      </article>
 
-      <li><h3>School</h3></li>
-      Escola, descrever melhor.
+      <article id="school"><li><h3>School</h3></li>
+      Escola onde os alunos estudam e os professores ensinam.
       <br><br>
       <table>
         <tbody>
@@ -459,9 +470,10 @@
          "students_count": 10,
          "teachers_count": 3}
       </code></pre>
+      </article>
 
-      <li><h3>SchoolClass</h3></li>
-      Turma.
+      <article id="school_class"><li><h3>SchoolClass</h3></li>
+      Turmas das escolas, agrupam alunos e conteúdos.
       <br><br>
       <table>
         <tbody>
@@ -492,6 +504,7 @@
          "teacher_name": "Flávio Andrade",
          "status": "ACTIVE"}
       </code></pre>
+      </article>
     </ul>
   </section>
 
@@ -500,7 +513,7 @@
     <h2>Usuários</h2>
     <br>
     <ul>
-      <li><h3>User</h3></li>
+      <article id="user"><li><h3>User</h3></li>
       Usuários.
       <br><br>
       <table>
@@ -561,6 +574,7 @@
          "points": 1800,
          "birth": "10/03/1985"}
       </code></pre>
+      </article>
     </ul>
   </section>
 </section>

@@ -73,7 +73,7 @@
     <h2>Autenticação</h2>
     <div class="methods">
       <h3>/api/auth/{token}/{namespace}</h3>
-      <p>retorna um objeto do tipo User</p>
+      <p>retorna um objeto do tipo <a href="/objetos#user" target="_blank">User</a></p>
     </div>
   </section>
 
@@ -81,15 +81,15 @@
     <h2>Usuários</h2>
     <div class="methods">
       <h3>/api/user/get_user_data</h3>
-      <p>retorna um objeto do tipo User</p>
+      <p>retorna um objeto do tipo <a href="/objetos#user" target="_blank">User</a></p>
     </div>
     <div class="methods">
       <h3>/api/user/get_student_classes</h3>
-      <p>retorna uma lista de objetos do tipo SchoolClass</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#school_class" target="_blank">SchoolClass</a></p>
     </div>
     <div class="methods">
     <h3>/api/user/get_teacher_classes</h3> 
-      <p>retorna uma lista de objetos do tipo SchoolClass</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#school_class" target="_blank">SchoolClass</a></p>
     </div>
   </section> 
 
@@ -97,15 +97,15 @@
     <h2>Organização de ensino</h2>
     <div class="methods">
       <h3>/api/organization/get_organization_data</h3>
-      <p>retorna um objeto do tipo Organization</p>
+      <p>retorna um objeto do tipo <a href="/objetos#organization" target="_blank">Organization</a></p>
     </div>
     <div class="methods">
       <h3>/api/organization/get_schools</h3>
-      <p>retorna uma lista de objetos do tipo School</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#school" target="_blank">School</a></p>
     </div>
     <div class="methods">
     <h3>/api/organization/get_school_classes</h3> 
-      <p>retorna uma lista de objetos do tipo SchoolClass</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#school_class" target="_blank">SchoolClass</a></p>
     </div>
   </section>
 
@@ -113,15 +113,15 @@
     <h2>Turmas</h2>
     <div class="methods">
       <h3>/api/school_class/get_school_class_data/{school_class_id}</h3>
-      <p>retorna um do objeto tipo SchoolClass</p>
+      <p>retorna um do objeto tipo <a href="/objetos#school_class" target="_blank">SchoolClass</a></p>
     </div>
     <div class="methods">
       <h3>/api/school_class/get_school_class_students/{school_class_id}</h3>
-      <p>retorna uma lista de objetos do tipo Student</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#user" target="_blank">User</a></p>
     </div>
     <div class="methods">
     <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
-      <p>retorna uma lista de objetos do tipo Content</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#conteudos" target="_blank">Content</a></p>
     </div>
   </section>
 
@@ -129,15 +129,16 @@
     <h2>Seções</h2>
     <div class="methods">
       <h3>/api/sections/get_sections/{parent_id | default=None}</h3>
-      <p>retorna uma lista de objetos do tipo ContentSection</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#content_section" target="_blank">
+        ContentSection</a></p>
     </div>
     <div class="methods">
       <h3>/api/sections/get_section_contents/{section_id}</h3>
-      <p>retorna uma lista de objetos do tipo Content</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#conteudos" target="_blank">Content</a></p>
     </div>
     <div class="methods">
     <h3>/api/school_class/get_school_class_contents/{school_class_id}</h3> 
-      <p>retorna uma lista de objetos do tipo Content</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#conteudos" target="_blank">Content</a></p>
     </div>
   </section>
 
@@ -145,15 +146,11 @@
     <h2>Conteúdos</h2>
     <div class="methods">
       <h3>/api/content/get_contents/{content_type | default=''}</h3>
-      <p>retorna uma lista de objetos do tipo Content</p>
-    </div>
-    <div class="methods">
-      <h3>/api/content/get_content_tags/{content_id}</h3>
-      <p>retorna uma lista de objetos do tipo Tag</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#conteudos" target="_blank">Content</a></p>
     </div>
     <div class="methods">
     <h3>/api/content/get_school_class_contents/{school_class_id}</h3> 
-      <p>retorna uma lista de objetos do tipo Content</p>
+      <p>retorna uma lista de objetos do tipo <a href="/objetos#conteudos" target="_blank">Content</a></p>
     </div>
   </section>
 
@@ -161,7 +158,7 @@
     <h2>Métricas</h2>
     <div class="methods">
       <h3>/api/metrics/get_content_metrics_from_user/{user_id}/{content_id}</h3>
-      <p>retorna um objeto do tipo InteractionSummary</p>
+      <p>retorna um objeto do tipo <a href="/objetos#metricas" target="_blank">InteractionSummary</a></p>
     </div>
   </section> 
 </section>
