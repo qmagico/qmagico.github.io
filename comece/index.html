@@ -52,7 +52,15 @@
   <h1><a href="/">QMágico API</a></h1>
   <p>QMágico do seu jeito!</p>
   <ul>
-    <li><a href="/objetos">Comece a usar</a></li>
+    <li><a href="/comece">Comece a usar</a>
+      <ul>
+        <li><a href="#ambtest">Ambiente de testes</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+        <li><a href="#cadastroapp">Cadastro de apps</a></li>
+        <li><a href="#chamadas-api">Chamadas da API</a></li>
+        <li><a href="#auth">Autenticação de usuários</a></li>
+      </ul>
+    </li>
     <li><a href="/objetos">Objetos</a></li>
     <li><a href="/metodos">Métodos</a></li>
     <li><a href="https://groups.google.com/forum/#!forum/qmagico_dev_suporte" target="_blank">Suporte</a></li>
@@ -60,8 +68,51 @@
 </header>
 
 <section class='content'>
-  <h2>Comece a usar</h2>
-  <iframe width="640" height="360" src="//www.youtube.com/embed/-gL0Hbk74i4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+  <h1>Comece a usar</h1>
+
+  <section id="ambteste">
+    <h2>Ambiente de testes</h2>
+    <p>Você pode acessar nosso ambiente de testes <a href="http://teste.qmagico.com.br/">clicando aqui.</a> Nele, você conta com um ambiente isolado para implementar seus apps com a estrutura e dados muito similares ao ambiente real da plataforma QMágico.</p>
+    <p>Caso precise de permissões específicas para testar seu app, entre em contato através da <a href="https://groups.google.com/forum/#!forum/qmagico_dev_suporte" target="_blank">lista de suporte</a> informando seu login e as permissões necessárias que faremos o mais rápido possível.</p>
+    <p>Só lembrando que os desenvolvedores do QMágico também utilizam este ambiente para testes, então a aplicação pode ficar instável em alguns momentos. Qualquer dúvida, entre em contato pela lista de suporte.</p>
+  </section>
+  
+  <section id='namespaces'>
+    <h2>Namespaces</h2>
+    <p>Namespaces são módulos do banco de dados da plataforma QMágico que permite a divisão das entradas do banco de dados entre diferentes clientes. A plataforma QMágico serve diversos clientes com a mesma aplicação, dividindo as informações através do sistema de namespaces.</p>
+    <p>Existem dois níveis de namespaces, o local e o global. O namespace local isola os dados de um cliente. Por exemplo, a instituição escola Brasil tem um namespace separado dos outros para guardar suas informações de métricas e conteúdos.</p>
+    <p>Já o namespace global guarda informações comuns a todos os clientes, como por exemplo usuários, apps e configurações da plataforma.</p>
+  </section>
+
+  <section id='cadastroapp'>
+    <h2>Cadastro de apps</h2>
+    <p>Para cadastrar seu app, acesse <a href="http://teste.qmagico.com.br/developers" target="_blank">teste.qmagico.com.br/developers</a>.</p>
+    <p>A tela de cadastro de apps é bem simples, basta preencher os campos "App ID", "Nome do app" e "URL do iframe" e marcar as permissões necessárias do app.</p>
+    <img src="/img/cadastro-app.png"><br><br>
+    <p>Depois disso, seu app fica pendente de aprovação da organização de ensino para ser instalado. Para autorização no ambiente de teste, basta solicitar a liberação na <a href="https://groups.google.com/forum/#!forum/qmagico_dev_suporte" target="_blank">lista de suporte</a>.</p>
+    <p>Depois que o app for instalado, você pode acessar a lista de apps em <a href="http://teste.qmagico.com.br/app/list" target="_blank">teste.qmagico.com.br/app/list</a> e a partir de la acessar seu app.</p>
+  </section>
+
+  <section id='chamadas-api'>
+    <h2>Chamadas na API</h2>
+    Para realizar chamadas na API, você deve enviar três parâmetros na requisição via <strong>HTTP header</strong>, estes parâmetros são api_key (disponível na tela de cadastro de apps), appid e ns (namespace para consultar os dados). 
+  </section>
+
+  <section id='auth'>
+    <h2>Autenticação de usuários</h2>
+    <p>A autenticação de usuários do QMágico através dos app é feita através de parâmetros na renderização do IFrame. Toda vez que um app é aberto por um usuário, o link do iframe cadastrado no app é chamado passando dois parâmetros na query string: token e ns.</p>
+
+    <pre><code>
+      &lt;iframe src="http://qmapp.com.br?token=abc123&ns=www"&gt;
+        ...
+      &lt;/iframe&gt;
+    </code></pre>
+
+    <br>
+    <p>Com estes parâmetros é possível buscar as informações do usuário logado através do token, chamando o método de autenticação da API.</p>
+
+  </section>
+      
 </section>
 
 <footer>
