@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-#Bom dia!
+##Bom dia!
 
 Este é nosso primeiro post do QMágico!
 
