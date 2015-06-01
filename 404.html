@@ -1,1 +1,15 @@
-Sorry this page does not exist =(
+---
+layout: page
+title : Página não econtrada
+header : Página não encontrada
+group: error
+---
+{% include JB/setup %}
+
+A página solicitada não foi encontrada, mas temos muitos posts legais aqui para você, confira os últimos:
+
+<ul class="posts">
+  {% for post in site.posts limit:5 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

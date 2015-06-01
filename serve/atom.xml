@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>QMAGICO Blog</title>
+ <link href="http://username.github.io/atom.xml" rel="self"/>
+ <link href="http://username.github.io"/>
+ <updated>2015-06-01T17:06:14-03:00</updated>
+ <id>http://username.github.io</id>
+ <author>
+   <name>Name Lastname</name>
+   <email>blah@email.test</email>
+ </author>
+
+ 
+ <entry>
+   <title>Saudações - Rafael Nunes</title>
+   <link href="http://username.github.io/Hello World/2015/06/01/teste-do-rafa"/>
+   <updated>2015-06-01T00:00:00-03:00</updated>
+   <id>http://username.github.io/Hello World/2015/06/01/teste-do-rafa</id>
+   <content type="html">&lt;p&gt;Olá mundo, gostaria de falar um pouquinho sobre técnicas de Front End e Search Engine Optimization com vocês!&lt;/p&gt;
+
+&lt;p&gt;Bem vindos ao novo blog do QMágico!&lt;/p&gt;
+
+&lt;p&gt;Grande abraço!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Meu primeiro post</title>
+   <link href="http://username.github.io/Teste/2015/06/01/meu-primeiro-post"/>
+   <updated>2015-06-01T00:00:00-03:00</updated>
+   <id>http://username.github.io/Teste/2015/06/01/meu-primeiro-post</id>
+   <content type="html">&lt;h2 id='ol'&gt;Olá!&lt;/h2&gt;
+
+&lt;p&gt;Heis aqui nosso primeiro post!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;def teste():
+    return 123&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;iframe width=&amp;quot;854&amp;quot; height=&amp;quot;510&amp;quot; src=&amp;quot;https://www.youtube.com/embed/01q8kF7OvzY&amp;quot; frameborder=&amp;quot;0&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/pre&gt;
+&lt;p&gt;Feito!&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
