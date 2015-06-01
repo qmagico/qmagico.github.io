@@ -11,8 +11,8 @@ tags: [teste]
 
 Heis aqui nosso primeiro post!
 
-{% highlight python %}
-def teste():
-    return 123
-{% endhighlight %}
+
+    def teste():
+        return 123
+
 Feito!
