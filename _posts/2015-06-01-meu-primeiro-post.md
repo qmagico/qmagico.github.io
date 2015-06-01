@@ -1,19 +1,18 @@
 ---
 layout: post
 title: "Meu primeiro post"
-description: ""
-category: "Geral"
-tags: [geral, introducao, teste]
+description: "Meu primeiro post bonitão"
+category: "Teste"
+tags: [teste]
 ---
 {% include JB/setup %}
 
-##Bom dia!
+## Olá!
 
-Este é nosso primeiro post do QMágico!
+Heis aqui nosso primeiro post!
 
-Aqui você vai aprender muito de desenvolvimento web!
-
-```
+```python
 def teste():
     return 123
 ```
+Feito!
