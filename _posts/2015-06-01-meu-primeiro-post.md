@@ -2,8 +2,8 @@
 layout: post
 title: "Meu primeiro post"
 description: ""
-category:
-tags: []
+category: "Geral"
+tags: [geral, introdução, teste]
 ---
 {% include JB/setup %}
 
