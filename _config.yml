@@ -76,18 +76,18 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : QM Developers
+      short_name : qm-developers
     livefyre :
-      site_id : 3328950
+      site_id : 123
     intensedebate :
-      account : 3328950
+      account : 123abc
     facebook :
-      appid : 3328950
+      appid : 123
       num_posts: 5
       width: 580
       colorscheme: light
     duoshuo :
-      short_name : QM Developers
+      short_name : jekyllbootstrap
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
