@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "1º Dia da Inivação no QMágico"
+title: "1º Dia da Inovação no QMágico"
 description: "Dia de estudo de novas tecnologias no QMágico"
 category: "Geral"
 tags: [Dia da Inovação, inovação, novidades, tecnologia]
