@@ -34,3 +34,5 @@ Abaixo, algumas fotos!
 ![Foto 5](/assets/images/1diainovacao/1diainovavao5.jpg)
 
 ![Foto 6](/assets/images/1diainovacao/1diainovavao6.jpg)
+
+![Foto 7](/assets/images/1diainovacao/1diainovavao7.jpg)
