@@ -30,3 +30,7 @@ Abaixo, algumas fotos!
 ![Foto 3](/assets/images/1diainovacao/1diainovavao3.jpg)
 
 ![Foto 4](/assets/images/1diainovacao/1diainovavao4.jpg)
+
+![Foto 5](/assets/images/1diainovacao/1diainovavao5.jpg)
+
+![Foto 6](/assets/images/1diainovacao/1diainovavao6.jpg)
