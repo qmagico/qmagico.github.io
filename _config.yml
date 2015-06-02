@@ -8,7 +8,7 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : QMAGICO Blog
+title : developers.qmagico.com.br
 tagline: Educação do seu jeito
 
 # The production_url is only used when full-domain names are needed
@@ -76,18 +76,18 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : QM Developers
     livefyre :
-      site_id : 123
+      site_id : 3328950
     intensedebate :
-      account : 123abc
+      account : 3328950
     facebook :
-      appid : 123
+      appid : 3328950
       num_posts: 5
       width: 580
       colorscheme: light
     duoshuo :
-      short_name : jekyllbootstrap
+      short_name : QM Developers
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -98,7 +98,7 @@ JB :
     gauges :
         site_id : 'SITE ID'
     google :
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-25728526-1'
     getclicky :
       site_id :
     mixpanel :
