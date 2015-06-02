@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Blog do QMágico!
-tagline: Educação do Seu Jeito
+title: <QM> Developers
+tagline: Blog para desenvolvedores
 ---
 {% include JB/setup %}
 
