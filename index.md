@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <QM> Developers
+title: &lsaquo;QM&rsaquo; Developers
 tagline: Blog para desenvolvedores
 ---
 {% include JB/setup %}
