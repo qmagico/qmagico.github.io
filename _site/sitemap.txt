@@ -1,0 +1,12 @@
+
+http://qmagico.github.io/404.html
+http://qmagico.github.io/archive.html
+http://qmagico.github.io/atom.xml
+http://qmagico.github.io/categories.html
+http://qmagico.github.io/index.html
+http://qmagico.github.io/pages.html
+http://qmagico.github.io/rss.xml
+http://qmagico.github.io/sitemap.txt
+http://qmagico.github.io/tags.html
+
+http://qmagico.github.io/geral/2015/06/01/1-dia-da-inovao-no-qmgico

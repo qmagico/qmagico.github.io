@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>developers.qmagico.com.br</title>
+        <description>developers.qmagico.com.br - </description>
+        <link>http://qmagico.github.io</link>
+        <atom:link href="http://qmagico.github.io/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Mon, 01 Jun 2015 22:49:19 -0300</lastBuildDate>
+        <pubDate>Mon, 01 Jun 2015 22:49:19 -0300</pubDate>
+        <ttl>60</ttl>
+
+
+        <item>
+                <title>1º Dia da Inovação no QMágico</title>
+                <description>
+&lt;p&gt;Fala pessoal!&lt;/p&gt;
+
+&lt;p&gt;Depois de um bom tempo planejando, conseguimos fazer nosso primeiro Dia da Inovação aqui no QMágico!&lt;/p&gt;
+
+&lt;p&gt;O intúito deste dia é permitir à equipe de desenvolvimento ter um dia aprendendo e pesquisando coisas interessantes que normalmente não teríamos tempo de fazer por conta da rotina de desenvolvimento.&lt;/p&gt;
+
+&lt;p&gt;Selecionamos vários assuntos maneiros, entre eles:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Criação de aplicações Django do Zero, para os que ainda não tinham feito isto.&lt;/li&gt;
+  &lt;li&gt;Criar um blog de DEV para a empresa (e aqui está ele!)&lt;/li&gt;
+  &lt;li&gt;Criar um app usando mobile usando Cordova&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Este foi um dia muito divertido, onde aprendemos muito!&lt;/p&gt;
+
+&lt;p&gt;Abaixo, algumas fotos!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao1.jpg&quot; alt=&quot;Foto 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao2.jpg&quot; alt=&quot;Foto 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao3.jpg&quot; alt=&quot;Foto 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao4.jpg&quot; alt=&quot;Foto 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao5.jpg&quot; alt=&quot;Foto 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao6.jpg&quot; alt=&quot;Foto 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao7.jpg&quot; alt=&quot;Foto 7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/1diainovacao/1diainovavao8.jpg&quot; alt=&quot;Foto 8&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>http://qmagico.github.io/geral/2015/06/01/1-dia-da-inovao-no-qmgico</link>
+                <guid>http://qmagico.github.io/geral/2015/06/01/1-dia-da-inovao-no-qmgico</guid>
+                <pubDate>Mon, 01 Jun 2015 00:00:00 -0300</pubDate>
+        </item>
+
+
+</channel>
+</rss>
